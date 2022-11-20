@@ -33,12 +33,16 @@
     }
    
     .movie {
-      grid-template-columns: auto 1fr;
+      display: flex;
+      flex-direction: column;
     }
    
     .movie .movie__title {
       grid-column-start: 1;
       grid-column-end: 3;
+    }
+    .movie__poster {
+      margin: auto;
     }
    
     .movie .movie__overview {

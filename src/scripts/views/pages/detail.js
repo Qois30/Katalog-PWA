@@ -1,5 +1,5 @@
 import UrlParser from '../../routes/url-parser'
-import TheMovieDbSource from '../../data/themoviedb-source'
+import restaurantDbSource from '../../data/restaurantDbSource'
 import { createMovieDetailTemplate } from '../templates/template-creator'
 
 const Detail = {
@@ -11,9 +11,9 @@ const Detail = {
 
   async afterRender () {
     const url = UrlParser.parseActiveUrlWithoutCombiner()
-    const movie = await TheMovieDbSource.detailMovie(url.id)
+    const restaurant = await restaurantDbSource.detailRestaurant(url.id)
     const movieContainer = document.querySelector('#movie')
-    movieContainer.innerHTML = createMovieDetailTemplate(movie)
+    movieContainer.innerHTML = createMovieDetailTemplate(restaurant)
   }
 }
 
