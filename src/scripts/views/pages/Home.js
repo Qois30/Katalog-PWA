@@ -14,7 +14,6 @@ const Home = {
 
   async afterRender () {
     const restaurant = await restaurantDbSource.restaurantList()
-    console.log(restaurant)
 
     const moviesContainer = document.querySelector('#movies')
     restaurant.forEach((restaurant) => {
