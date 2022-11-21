@@ -1,6 +1,5 @@
 # Katalog-PWA
 
-<<<<<<< Dev-NativeCapability-3
 adding offline page
 =======
 # How to Install
